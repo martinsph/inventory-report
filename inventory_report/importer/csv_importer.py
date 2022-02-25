@@ -6,8 +6,6 @@ from inventory_report.importer.importer import Importer
 class CsvImporter(Importer):
     def import_data(path):
         _, extension = splitext(path)
-        print(extension)
-        print(path)
 
         if not path.endswith(".csv"):
             raise ValueError('Arquivo inválido')

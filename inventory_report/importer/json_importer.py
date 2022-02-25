@@ -8,7 +8,7 @@ from inventory_report.importer.importer import Importer
 class JsonImporter(Importer):
     def import_data(path):
         _, extension = splitext(path)
-
+        print("teste")
         if (extension != '.json'):
             raise ValueError('Arquivo inválido')
 

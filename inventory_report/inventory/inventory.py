@@ -8,6 +8,7 @@ from inventory_report.importer.xml_importer import XmlImporter
 
 class Inventory():
     def import_data(path, report_type):
+        # print("teste")
         file_name, extension = os.path.splitext(path)
         if extension == ".csv":
             raw_file = CsvImporter.import_data(path)
